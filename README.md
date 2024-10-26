@@ -1,3 +1,7 @@
+![Screenshot 1](image.png)
+![Screenshot 2](image1.png)
+
+
 # DFINITY Product App
 
 A simple product management app built on the DFINITY Internet Computer using Motoko and React. This app allows users to add products, search for products by ID, and view a list of all products.
