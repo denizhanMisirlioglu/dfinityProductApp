@@ -1,13 +1,43 @@
+// Renk Paleti
+$primary-color: #2d3436; // Koyu gri
+$secondary-color: #6c5ce7; // Hafif mor ton
+$accent-color: #00cec9; // Canlı yeşil ton
+$background-color: #f0f0f0; // Açık gri arka plan
+$text-color: #333333; // Metin için koyu ton
+$border-color: #dfe6e9; // Çerçeve için nötr renk
+$button-hover: darken($secondary-color, 10%);
+
 body {
-  font-family: sans-serif;
-  font-size: 1.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  background-color: $background-color;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  max-width: 700px;
+  margin: 2em auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: $primary-color;
+  font-size: 1.6rem;
+  margin-bottom: 1em;
+  text-align: center;
+  border-bottom: 2px solid $accent-color;
+  padding-bottom: 0.5em;
 }
 
 img {
-  max-width: 50vw;
-  max-height: 25vw;
+  max-width: 100px;
+  margin: 20px auto;
   display: block;
-  margin: auto;
 }
 
 form {
@@ -15,23 +45,61 @@ form {
   justify-content: center;
   gap: 0.5em;
   flex-flow: row wrap;
-  max-width: 40vw;
-  margin: auto;
-  align-items: baseline;
+  margin: 1em 0;
+  align-items: center;
 }
 
-button[type="submit"] {
-  padding: 5px 20px;
-  margin: 10px auto;
-  float: right;
+input[type="text"],
+input[type="number"] {
+  padding: 10px;
+  border: 1px solid $border-color;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 250px;
+  font-size: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-#greeting {
-  margin: 10px auto;
-  padding: 10px 60px;
-  border: 1px solid #222;
+button {
+  padding: 10px 20px;
+  background-color: $secondary-color;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 1rem;
 }
 
-#greeting:empty {
-  display: none;
+button:hover {
+  background-color: $button-hover;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+#greeting,
+.product-info {
+  margin: 1em auto;
+  padding: 15px;
+  background-color: $accent-color;
+  color: #ffffff;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 1em 0;
+}
+
+ul li {
+  padding: 10px;
+  background-color: $background-color;
+  border: 1px solid $border-color;
+  margin-bottom: 5px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
