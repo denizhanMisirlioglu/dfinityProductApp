@@ -1,5 +1,9 @@
-![Screenshot 1](image.png)
-![Screenshot 2](image1.png)
+## Screenshots
+
+<div style="display: flex; gap: 10px;">
+    <img src="image1.png" alt="Screenshot 1" width="400"/>
+    <img src="imag.png" alt="Screenshot 2" width="400"/>
+</div>
 
 
 # DFINITY Product App
